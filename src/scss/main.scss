@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 42px;
+  background-color: lightgray;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    list-style: none;
+    
+    li {
+      padding: 14px 7px;
+      border: 2px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}
