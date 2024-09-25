@@ -1,6 +1,6 @@
 import react from 'react';
 
-function Game42() {
+function SearchCountry() {
 
   return(
 
@@ -10,4 +10,4 @@ function Game42() {
   );
 };
 
-export default Game42;
+export default SearchCountry;

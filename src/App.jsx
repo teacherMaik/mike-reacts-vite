@@ -1,20 +1,20 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Header from './components/HEader';
+import Header from './components/Header';
 import Footer from './components/Footer';
-import Countries from './pages/Countries';
-import Game42 from './pages/Game42';
+import Home from './pages/Home';
+import SearchCountry from './pages/SearchCountry';
 
 import './scss/main.scss';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <><Header /><Countries /></>,
+    element: <><Header /><Home /></>,
   },
   {
-    path: '/Game42',
-    element: <><Header /><Game42 /></>,
+    path: '/search-country',
+    element: <><Header /><SearchCountry /></>,
   }
 ]);
 

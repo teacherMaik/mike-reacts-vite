@@ -13,9 +13,18 @@ async function getData() {
 
     const json = await response.json();
     console.log(json[2].name.common + ' capital city: ' + json[2].capital);
+    return (json);
   } catch (error) {
     console.error(error.message);
   }
 }
 
-getData();
+const countries = await getData();
+
+
+function getValueFind(capitalCity) {
+
+  return (countries.find(country => country.capital == capitalCity))
+}
+
+console.log(getValueFind('Bern'));

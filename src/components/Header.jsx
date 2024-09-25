@@ -17,15 +17,17 @@ const Header = () => {
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
-              >Countries</NavLink>
+              >Home
+            </NavLink>
           </li>
           <li>
             <NavLink
-              to='/Game42'
+              to='/search-country'
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
-              >42 The Game</NavLink>
+              >Search a Country
+            </NavLink>
           </li>
         </ul>
       </nav>
