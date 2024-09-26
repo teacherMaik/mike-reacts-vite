@@ -1,5 +1,7 @@
 import React from 'react';
 
+var push = 'maik';
+
 async function getData() {
   const url = "https://restcountries.com/v3.1/all";
   try {
